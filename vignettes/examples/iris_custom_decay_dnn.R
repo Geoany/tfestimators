@@ -72,5 +72,5 @@ predictions <- predict(classifier, input_fn = inputs)
 
 # Open TensorBoard
 # tensorboard(log_dir = model_dir, launch_browser = FALSE)
-
+system(paste0("tensorboard --logdir=", model_dir))
 
